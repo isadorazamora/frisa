@@ -49,73 +49,83 @@
     <div class="horizontal-padding vertical-padding seccion-espaciada fondo-bienvenida">
         <section class="bienvenido">
             <div class="videobienvenido">
-                <video controls width="100%" poster="img/logotipofrisa.png">
-                    <source src="video/bienvenido.mp4" type="video/mp4">
-                </video>
-                <!-- <img class="sobremi-img" src="img/fotoperfil.png" alt="Video tutorial de como se pone"> -->
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/YrGJzJ5iSx0" title="Video tutorial"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
         </section>
     </div>
     <!-- Sección de Video Tutorial -->
-    <div class="horizontal-padding vertical-padding seccion-espaciada fondo-video-tutorial">
-        <h2 class="titulo-seccion text-center">Video tutorial</h2>
+<div class="horizontal-padding vertical-padding seccion-espaciada fondo-video-tutorial">
+  <h2 class="titulo-seccion text-center">Video tutorial</h2>
 
-        <section class="video-tutorial">
-            <div class="video-tutorial-video">
-                <video controls width="100%" poster="img/logotipofrisa.png">
-                    <source src="video/tutorialfrisa.mp4" type="video/mp4">
-                </video>
-                <!-- <img class="sobremi-img" src="img/fotoperfil.png" alt="Video tutorial de como se pone"> -->
-            </div>
-            <div class="video-tutorial-descripcion">
-                <h2></h2>
-
-                <h3>Materiales que necesitarás:</h3>
-                <div class="ilustraciones-galeria">
-                    <div class="ilustracion-item">
-                        <img src="img/telas.png" alt="Nombre 1">
-                        <span>Tela Novak y Piqué</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/maquina de coser.png" alt="Nombre 2">
-                        <span>Máquina de coser</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/aguja.png" alt="Nombre 3">
-                        <span>Agujas</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/tijeras.png" alt="Nombre 4">
-                        <span>Tijeras</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/alfiler.png" alt="Nombre 5">
-                        <span>Alfiles</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/iman.png" alt="Nombre 6">
-                        <span>Imán</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/regla.png" alt="Nombre 7">
-                        <span>Regla</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/icepack.png" alt="Nombre 8">
-                        <span>Tiras de Icepacks</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/manguera de pvc.png" alt="Nombre 9">
-                        <span>Manguera de PVC</span>
-                    </div>
-                    <div class="ilustracion-item">
-                        <img src="img/aislante.png" alt="Nombre 10">
-                        <span>Aislante térmico</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- Contenedor con flex -->
+  <section class="video-tutorial d-flex justify-content-between align-items-start" style="gap: 30px;">
+    
+    <!-- VIDEO a la izquierda -->
+    <div class="video-tutorial-video" style="flex: 1;">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/AbH31YeYH7A"
+        title="Video tutorial" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     </div>
+
+    <!-- MATERIALES a la derecha -->
+    <div class="video-tutorial-descripcion" style="flex: 1;">
+      <h3>Materiales que necesitarás:</h3>
+      <div class="ilustraciones-galeria">
+        <!-- Todo lo que ya tenías con las imágenes -->
+         
+                    <div class="ilustraciones-galeria">
+                        <div class="ilustracion-item">
+                            <img src="img/telas.png" alt="Nombre 1">
+                            <span>Tela Novak y Piqué</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/maquina de coser.png" alt="Nombre 2">
+                            <span>Máquina de coser</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/aguja.png" alt="Nombre 3">
+                            <span>Agujas</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/tijeras.png" alt="Nombre 4">
+                            <span>Tijeras</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/alfiler.png" alt="Nombre 5">
+                            <span>Alfiles</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/iman.png" alt="Nombre 6">
+                            <span>Imán</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/regla.png" alt="Nombre 7">
+                            <span>Regla</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/icepack.png" alt="Nombre 8">
+                            <span>Tiras de Icepacks</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/manguera de pvc.png" alt="Nombre 9">
+                            <span>Manguera de PVC</span>
+                        </div>
+                        <div class="ilustracion-item">
+                            <img src="img/aislante.png" alt="Nombre 10">
+                            <span>Aislante térmico</span>
+                        </div>
+                    </div>
+
+      </div>
+    </div>
+
+  </section>
+</div>
+
     <div class="horizontal-padding vertical-padding seccion-espaciada fondo-galeriaydescargas">
         <section class="carrusel-central d-flex align-items-center justify-content-center" style="gap: 30px;">
             <!-- Párrafo izquierdo -->
@@ -135,13 +145,22 @@
                 <div id="frisaCarrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2200">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/foto1.png" class="d-block w-100" alt="Foto 1">
+                            <img src="img/portadamama.JPG" class="d-block w-100" alt="Foto 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/foto2.png" class="d-block w-100" alt="Foto 2">
+                            <img src="img/u1.jpeg" class="d-block w-100" alt="Foto 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/foto3.png" class="d-block w-100" alt="Foto 3">
+                            <img src="img/u2.jpeg" class="d-block w-100" alt="Foto 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/u3.jpeg" class="d-block w-100" alt="Foto 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/u4.jpeg" class="d-block w-100" alt="Foto 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/u5.jpeg" class="d-block w-100" alt="Foto 3">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#frisaCarrusel"
