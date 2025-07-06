@@ -1,0 +1,319 @@
+/* Estilos básicos para header, head, main y footer */
+
+header {
+    background-color: #faebf5;
+    color: #fff;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.topheader {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #FFFF; /* O el color de fondo de tu header */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+main {
+    padding: 32px 16px;
+    background-color: #f4f4f4;
+    min-height: 60vh;
+}
+
+
+.horizontal-padding {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.vertical-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.seccion-espaciada {
+  margin-bottom: x; /* Puedes ajustar el valor según lo que necesites */
+}
+
+
+/*logo*/
+.bienvenido-logo {
+  display: block;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo-seccion {
+    font-size: 2rem;
+    color: #28347B;
+    margin-bottom: 70px;
+    text-align: center;
+
+}
+
+h3 {
+  color: #242e69; /* Cambia este valor por el color que prefieras */
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+
+
+.bienvenido {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/*fondos*/
+.fondo-bienvenida {
+  background-image: url('../img/fondobienvenido.jpg'); /* Cambia la ruta y nombre según tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08); /* Opcional */
+}
+
+.fondo-galeriaydescargas {
+  background-image: url('../img/probandofondos.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,0.7); /* Blanco semitransparente */
+  background-blend-mode: lighten; /* Mezcla el color con la imagen */
+}
+
+
+/* Galería horizontal de ilustraciones */
+.ilustraciones-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 40px;
+}
+
+.ilustracion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+}
+
+.ilustracion-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  filter: brightness(0) saturate(80%) invert(13%) sepia(90%) saturate(900%) hue-rotate(200deg); /* Azul */
+}
+
+.ilustracion-item span {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #242e69;
+  font-weight: 700;
+  
+}
+
+
+.fondo-video-tutorial {
+  background-color: #fff9fd;
+
+}
+
+
+/* Carrusel central con párrafos a los lados */
+.carrusel-central {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carrusel-texto-izq,
+.carrusel-texto-der {
+  flex: 1;
+  min-width: 180px;
+  max-width: 300px;
+}
+
+.carrusel-texto-izq h3,
+.carrusel-texto-der h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.carrusel-texto-izq p,
+.carrusel-texto-der p {
+  font-size: 1rem;
+  color: #444;
+}
+
+#frisaCarrusel {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#frisaCarrusel img {
+  border-radius: 10px;
+  object-fit: cover;
+  height: 300px;
+}
+
+
+.text-center.mt-3 {
+  margin-top: 20px !important;
+}
+
+
+/* botones */
+.btn.btn-primary {
+  background-color: #d7edf5;
+  color: #28347B;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background-color 0.2s;
+  font-weight: 700;
+}
+
+.btn.btn-primary:hover {
+  background-color: #b5cdd6;
+}
+
+
+
+/*videos*/
+
+.videobienvenido,
+.video-tutorial-video {
+  margin-left: auto;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  background: #fff;
+  border-radius: 12px; /* Opcional: bordes redondeados */
+  padding: 12px;       /* Opcional: espacio alrededor del video */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Opcional: sombra */
+}
+
+.videobienvenido iframe,
+.video-tutorial-video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.video-tutorial {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.video-tutorial-descripcion {
+  flex: 1;
+}
+
+.video-tutorial-descripcion h2 {
+  color: #444; /* Cambia este valor por el color que prefieras */
+}
+
+/* footer */ 
+.footer {
+  background: #faebf5;
+  color: #111635;
+  padding: 30px 0 30px 0;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-weight: 500;
+}
+.footer a {
+  color: #111635;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.footer-info span,
+.footer-info a {
+  display: block;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-logo-pucv,
+.footer-logo-ead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .carrusel-central {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .carrusel-texto-izq,
+  .carrusel-texto-der {
+    max-width: 100%;
+    text-align: center;
+  }
+  #frisaCarrusel img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-tutorial {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bienvenido {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
